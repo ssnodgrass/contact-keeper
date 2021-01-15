@@ -7,6 +7,7 @@ export const UPDATE_CONTACT = 'UPDATE_CONTACT';
 export const FILTER_CONTACTS = 'FILTER_CONTACTS';
 export const CLEAR_FILTER = 'CLEAR_FILTER';
 export const REGISTER_SUCCESS = 'REGISTER_SUCCESS';
+export const CONTACT_ERROR = 'CONTACT_ERROR';
 
 // Auth
 export const REGISTER_FAIL = 'REGISTER_FAIL';

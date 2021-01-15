@@ -6,6 +6,7 @@ import {
   UPDATE_CONTACT,
   FILTER_CONTACTS,
   CLEAR_FILTER,
+  CLEAR_ERRORS,
 } from '../types';
 
 const contactReduer = (state, action) => {
@@ -51,6 +52,11 @@ const contactReduer = (state, action) => {
       return {
         ...state,
         filtered: null,
+      };
+    case CONTACT_ERROR:
+      return {
+        ...state,
+        error: action.payload,
       };
     default:
       return state;
